@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openai-image-analyzer"
+version = "1.0.0"
+description = "Analyzes images from URLs using OpenAI Vision API"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "openai>=1.54.0",
+    "loguru==0.7.2",
+    "pyyaml==6.0.2",
+]
+
+[project.scripts]
+image-analyzer = "openai_image_analyzer.analyzer:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
