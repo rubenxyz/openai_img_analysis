@@ -1,0 +1,20 @@
+# OpenAI Image Analyzer Configuration
+
+#CLAUDE CODE – NEVER TOUCH THESE FILE
+# 1Password credentials
+1password_item: API OpenAI
+1password_field: Api Key
+
+# Model settings
+model: gpt-5
+# Maximum tokens for response
+# Common values: 1024 (short), 2048 (medium), 4096 (standard), 8192 (long), 16384 (max for most models)
+max_tokens: 8192
+
+# Pricing tier - controls cost/speed tradeoff
+# Options: batch | flex | standard | priority
+# - batch: 50% discount, 24hr turnaround (requires different API workflow)
+# - flex: Lower cost, higher latency  
+# - standard: Regular pricing, real-time
+# - priority: 2x cost, faster processing
+pricing_tier: flex
